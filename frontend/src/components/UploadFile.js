@@ -21,7 +21,7 @@ const UploadFile = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/upload-xml-file",
+        "https://credit-sea-n795.onrender.com/api/upload-xml-file",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

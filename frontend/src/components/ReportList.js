@@ -10,7 +10,7 @@ const ReportList = () => {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/reports");
+        const response = await axios.get("https://credit-sea-n795.onrender.com/api/reports");
         setReports(response.data);
         setFilteredReports(response.data); 
       } catch (error) {
@@ -19,7 +19,7 @@ const ReportList = () => {
     };
     fetchReports();
   }, []);
-  
+
   const handleUserChange = (event) => {
     const selected = event.target.value;
     setSelectedUser(selected);
