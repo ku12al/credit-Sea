@@ -11,7 +11,7 @@ const creaditSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  creaditScore: {
+  creditScore: {
     type: String,
   },
   reportSummary: {
