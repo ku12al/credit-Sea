@@ -1,0 +1,59 @@
+General Styles
+.body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .reports-container {
+    width: 100vw;
+    max-width: 100%;
+
+  
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(229, 229, 229, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .back-home-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-home-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .back-home-btn:active {
+    transform: translateY(2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 28px;
+    }
+  
+    .back-home-btn {
+      padding: 10px 25px;
+      font-size: 16px;
+    }
+  }
+  

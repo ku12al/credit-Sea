@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../stylesheet/UploadFile.css";  
 
 const UploadFile = () => {
   const [file, setFile] = useState(null);
@@ -8,6 +9,7 @@ const UploadFile = () => {
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
+
   const handleUpload = async () => {
     if (!file) {
       setMessage("Please select a file.");
@@ -31,12 +33,17 @@ const UploadFile = () => {
       setMessage("Error uploading file.");
     }
   };
+
   return (
-    <div>
+    <div className="upload-container">
       <h2>Upload XML File</h2>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Upload</button>
-      {message && <p>{message}</p>}
+      <div className="input-container">
+        <input type="file" onChange={handleFileChange} />
+      </div>
+      <button className="upload-btn" onClick={handleUpload}>
+        Upload
+      </button>
+      {message && <p className="message">{message}</p>}
     </div>
   );
 };

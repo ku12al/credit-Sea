@@ -1,17 +1,18 @@
-import React from 'react'
-import ReportList  from "../components/ReportList.js"
-import { Link } from 'react-router-dom'
+import React from "react";
+import ReportList from "../components/ReportList.js";
+import { Link } from "react-router-dom";
+import "../stylesheet/Report.css";  
 
 const Reports = () => {
   return (
-      <div>
-      <h1>Credit Report Data</h1>
+    <div className="reports-container">
+      <h1 className="heading">Credit Report Data</h1>
       <ReportList />
       <Link to="/">
-          <button>Back to Home</button>
+        <button className="back-home-btn">Back to Home</button>
       </Link>
-  </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Reports
+export default Reports;

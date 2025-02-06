@@ -1,0 +1,59 @@
+/* General Styles */
+.body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e8f0fe, #ffffff);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .view-reports-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .view-reports-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .view-reports-btn:active {
+    transform: translateY(2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 28px;
+    }
+  
+    .view-reports-btn {
+      padding: 10px 25px;
+      font-size: 16px;
+    }
+  }
+  
